@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    color: #323232;
+    background-color: #00ffd2;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -126,6 +131,10 @@ nav {
     position: absolute;
     box-shadow: 0 0 1000px 50px #00ffd2;
     z-index: -100;
+}
+
+section#dev {
+    margin-top: 60px;
 }
 
 section#home {
@@ -411,7 +420,7 @@ footer .column>a:hover {
 
 .whatsapp-button {
     position: fixed;
-    bottom: 40px;
+    bottom: 120px;
     right: 40px;
     border-radius: 50%;
     width: 50px;
@@ -420,6 +429,20 @@ footer .column>a:hover {
 }
 
 .whatsapp-button:hover {
+    scale: 0.9;
+}
+
+.instagram-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: scale 0.3s;
+}
+
+.instagram-button:hover {
     scale: 0.9;
 }
 
@@ -483,6 +506,15 @@ footer .column>a:hover {
     }
 
     .whatsapp-button {
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        border-radius: 50%;
+        width: 50px;
+        height: 60px;
+    }
+
+    .instagram-button {
         position: fixed;
         bottom: 20px;
         right: 20px;
