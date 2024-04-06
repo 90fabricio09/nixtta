@@ -302,20 +302,6 @@ body {
   color: #fff;
 }
 
-.formacao-container {
-  position: relative;
-}
-
-.formacao-container::after {
-  content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url("../img/detalhe.svg") no-repeat center;
-  position: absolute;
-  bottom: -50px;
-}
-
 .formacao .subtitulo {
   color: #ffffff;
 }
@@ -451,7 +437,7 @@ body {
   background-color: #717171;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.3s ease;
 }
 
 .active, .dot:hover {
