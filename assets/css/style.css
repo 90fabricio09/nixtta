@@ -189,11 +189,14 @@ section#home .image {
 }
 
 @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(20px);
+        transform: translateY(20px);
     }
 }
 
@@ -476,7 +479,125 @@ footer .column>a:hover {
     scale: 0.9;
 }
 
+.window {
+    position: fixed;
+    bottom: 110px;
+    right: 40px;
+    border-radius: 50%;
+    transition: scale 0.3s;
+}
+
+.btn-sup {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #00ffd2;
+    background-color: #323232;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-sup:hover {
+    color: #323232;
+    background-color: #ffffff;
+    scale: 0.9;
+}
+
+.aba {
+    border: 2px solid #00ffd2;
+    max-width: 500px;
+    overflow-y: auto;
+    max-height: 550px;
+    padding: 25px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+    background-color: #141414;
+}
+
+.aba h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.aba h2 span {
+    color: #00ffd2;
+}
+
+.aba p {
+    color: #666;
+}
+
+.global-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content-sup {
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #323232;
+    margin: 15px;
+    padding: 15px;
+}
+
+.content-sup img {
+    border-radius: 5px;
+}
+
+.content-sup i {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 30px;
+    color: #00ffd2;
+}
+
+.content-sup h3 {
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.content-sup h3 span {
+    color: #00ffd2;
+}
+
+.content-sup p {
+    color: #cecece;
+    font-size: 13px;
+}
+
 @media (width < 900px) {
+
+    .window {
+        right: 15px;
+        bottom: 80px;
+    }
+
+    .btn-sup {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .aba {
+        max-width: 400px;
+    }
+
+    .content-sup i {
+        top: 8px;
+        right: 10px;
+        font-size: 25px;
+    }
+
     .image {
         display: none;
     }
@@ -535,6 +656,27 @@ footer .column>a:hover {
         grid-template-columns: 1fr 150px;
     }
 
+    .aba {
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    .content-sup {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .aba h2 {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .content-sup i {
+        display: none;
+    }
+
     .whatsapp-button {
         position: fixed;
         bottom: 80px;
@@ -580,8 +722,8 @@ section#home p {
 }
 
 section#servico {
-    border-top: 1.5px solid rgba(255,255,255,0.075);
-    border-bottom: 1.5px solid rgba(255,255,255,0.075);
+    border-top: 1.5px solid rgba(255, 255, 255, 0.075);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.075);
     background-color: #141414;
     color: #fff;
     padding: 4.5em 0 2.5em 0;
