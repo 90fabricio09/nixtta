@@ -185,10 +185,10 @@ section#home .content p {
 
 section#home .image {
     position: relative;
-    animation: float 3s ease-in-out infinite;
+    /* animation: float 3s ease-in-out infinite; */
 }
 
-@keyframes float {
+/* @keyframes float {
 
     0%,
     100% {
@@ -198,7 +198,7 @@ section#home .image {
     50% {
         transform: translateY(20px);
     }
-}
+} */
 
 section#home .image img {
     max-width: 600px;
